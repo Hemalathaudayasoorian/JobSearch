@@ -1,0 +1,16 @@
+<div class="container">
+  <ul class="list-group" *ngIf="FavExists">
+    <li class="row list-group-item d-flex justify-content-between align-items-center" *ngFor="let item of jobs">
+      <div class="col-1">
+        <img src='{{item?.companyLogo}}' alt="" srcset="">
+      </div>
+      <div class="col-10">
+        <h3 style="cursor: pointer;"> {{item?.title}} </h3> <br>{{item?.id}} Company:
+        {{item?.companyName}} Reference: {{item?.reference}}
+      </div>
+    </li>
+  </ul>
+  <div *ngIf="!FavExists">
+    No Favourites Exists
+  </div>
+</div>
