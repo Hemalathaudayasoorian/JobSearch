@@ -8,5 +8,5 @@ export const routes: Routes = [
     {path:'jobs',component:JobsComponent},
     {path:'fav',component:FavoritesComponent},
     {path:'desc/:id',component:DescriptionComponent},
-    {path:'**',redirectTo:'jobs'}
+    {path:'**',component:JobsComponent}
 ];
